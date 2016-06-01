@@ -52,7 +52,7 @@ RSpec.describe Checkout do
 
 			it 'should return the correct total price' do
 				price = subject.total
-				expect(price).to eq(66.78)
+				expect(price).to eq("£66.78")
 			end
 		end
 
@@ -66,7 +66,7 @@ RSpec.describe Checkout do
 
 			it 'should return the correct total price' do
 				price = subject.total
-				expect(price).to eq(36.95)
+				expect(price).to eq("£36.95")
 			end
 		end
 
@@ -81,7 +81,7 @@ RSpec.describe Checkout do
 
 			it 'should return the correct total price' do
 				price = subject.total
-				expect(price).to eq(73.76)
+				expect(price).to eq("£73.76")
 			end
 		end
 	end

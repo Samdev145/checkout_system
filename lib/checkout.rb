@@ -15,7 +15,13 @@ class Checkout
 		promotional_rules.each do |rule|
 			@price = rule.execute_rule(basket)
 		end
-		price
+		format_result(price)
+	end
+
+	private
+
+	def format_result(num)
+		sprintf "£%.2f", num
 	end
 
 end
